@@ -1,5 +1,5 @@
 import { Box, Grid, iconClasses } from "@mui/material";
-// import Sphere from "./skills/Sphere";
+import Sphere from "./skills/Sphere";
 import SectionTitle from "../SectionTitle";
 
 const SkillsSection = () => {
@@ -20,7 +20,7 @@ const SkillsSection = () => {
           />
         </Grid>
         <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
-          {/* <Sphere /> */}
+          <Sphere />
         </Grid>
       </Grid>
     </Box>
