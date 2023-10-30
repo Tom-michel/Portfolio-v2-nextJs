@@ -1,9 +1,9 @@
 import { Box, Grid, iconClasses } from "@mui/material";
-import Sphere from "./skills/Sphere";
+// import Sphere from "./skills/Sphere";
 import SectionTitle from "../SectionTitle";
 
 const SkillsSection = () => {
-  const slugs = ["javascript", "java", "dart", "typescript"];
+  // const slugs = ["javascript", "java", "dart", "typescript"];
   return (
     <Box className="skills-section" sx={{ my: 5, px: { xs: 0, sm: 2 } }}>
       <Grid container>
@@ -20,7 +20,7 @@ const SkillsSection = () => {
           />
         </Grid>
         <Grid item xs={12} md={6} sx={{ textAlign: "center" }}>
-          <Sphere />
+          {/* <Sphere /> */}
         </Grid>
       </Grid>
     </Box>
