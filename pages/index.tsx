@@ -19,12 +19,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Toolbar sx={{display:'flex', flexDirection:'column', backgroundColor:'var(--primaryColorOp)', py:3}}>
-        <h1>THIS SITE IS STILL SITE IN DEVELOPEMENT </h1>
-        <h4>
+        <h1>THIS VERSION IS STILL SITE IN DEVELOPEMENT </h1>
+        <h3>
           Please go to the{" "}{" "}
           <Link href="https://v1-michelbtompe.vercel.app/"><Button color='info' variant='contained'>Version 1</Button></Link>
           {" "}{" "} of the site
-        </h4>
+        </h3>
       </Toolbar>
       <BannerSection />
       <ProjectsSection />
