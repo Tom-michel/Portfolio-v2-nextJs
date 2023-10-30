@@ -1,6 +1,6 @@
 .MuiMenu-paper,
 .MuiPopover-paper {
-  background-color: var(--cardBgColor);
+  background-color: var(--cardBgColor) !important;
   /* left: 16px !important;
   right: 0 !important; */
   /* right: 16px !important; */
