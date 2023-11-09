@@ -174,6 +174,7 @@ const Experiences = () => {
           borderColor: "var(--cardBgColor)",
           display: "flex",
           justifyContent: "center",
+          ".MuiTabs-indicator": { backgroundColor: "var(--primaryColor)" },
         }}
       >
         <TabList
@@ -193,6 +194,7 @@ const Experiences = () => {
                 ":hover": { opacity: 1 },
                 "&&.Mui-selected": {
                   opacity: 1,
+                  color: "var(--primaryColor)",
                 },
               }}
               label={e.year}

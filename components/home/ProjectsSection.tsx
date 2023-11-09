@@ -117,6 +117,7 @@ const ProjectsSection = () => {
                     display: "flex",
                     justifyContent: "space-between",
                     overflow: "hidden",
+                    height: 100,
 
                     ".imagePro": {
                       position: "relative",
@@ -125,6 +126,8 @@ const ProjectsSection = () => {
                       overflow: "hidden",
                       transition: "0.3s",
                       bottom: -110,
+
+                      display: { xs: "none", sm: "flex" },
                     },
                     ":hover .imagePro": {
                       overflow: "hidden",

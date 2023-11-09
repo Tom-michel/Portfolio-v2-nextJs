@@ -1,7 +1,10 @@
+import { useTheme } from "@/hooks/use_theme";
 import {
   AccountCircleOutlined,
   Close,
+  DarkMode,
   DragHandle,
+  LightMode,
   LinkedIn,
   Menu as MenuIcon,
   OpenInNewOutlined,
@@ -121,6 +124,8 @@ export default function Navbar() {
     transition: "0.3s",
   };
 
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <>
       <AppBar
@@ -128,7 +133,8 @@ export default function Navbar() {
         sx={{
           backgroundColor: "transparent",
           boxShadow: "none",
-          py: 0.315,
+          // py: 0.315,
+          py: 1,
         }}
       >
         <Container>
@@ -161,12 +167,16 @@ export default function Navbar() {
               >
                 <Box sx={{ display: "flex", alignItems: "center" }}>
                   {socials.map((social) => (
-                    <IconButton key={social.id} size="small" sx={{ py: 0 }}>
+                    <IconButton
+                      key={social.id}
+                      size="small"
+                      sx={{ py: 0.7, mx: 0.3 }}
+                    >
                       <Typography
                         component="a"
                         href={social.href}
                         target="_blank"
-                        sx={{ mx: 0.5, display: "flex", alignItems: "center" }}
+                        sx={{ display: "flex", alignItems: "center" }}
                       >
                         {social.icon}
                       </Typography>
@@ -174,7 +184,19 @@ export default function Navbar() {
                   ))}
                 </Box>
 
-                <Box sx={{ flexGrow: 0 }}>
+                <Box
+                  sx={{ flexGrow: 0, display: "flex", alignItems: "center" }}
+                >
+                  <IconButton
+                    size="small"
+                    aria-label={"Toggle theme"}
+                    onClick={() => toggleTheme()}
+                    className="icon-hover"
+                    sx={{ ml: 0.3, mr: 2 }}
+                  >
+                    {theme === "light" ? <DarkMode /> : <LightMode />}
+                  </IconButton>
+
                   <IconButton
                     // size="large"
                     aria-label="account of current user"
@@ -254,7 +276,7 @@ export default function Navbar() {
                       </MenuItem>
                     ))}
 
-<Divider />
+                    <Divider />
                     {pages.map((page) => (
                       <MenuItem key={page.id} onClick={handleCloseNavMenu}>
                         <Link
@@ -271,18 +293,48 @@ export default function Navbar() {
                       </MenuItem>
                     ))}
                     <Divider />
-                    <MenuItem>
-                          <Link target="_blank" href="https://v1-michelbtompe.vercel.app/" style={{width: "100%",
-                            display: "flex",
-                            alignItems: "center",
-                            gap: "15px",color:'var(--primaryColor)'}}>
-                            <OpenInNewOutlined sx={{fill:'var(--primaryColor)'}} /> V1 version
-                          </Link>
-                    </MenuItem>
+                    <Box
+                      sx={{
+                        px: 1.9,
+                        py: 0.3,
+                        display: "flex",
+                        justifyContent: "space-between",
+                      }}
+                    >
+                      <Link
+                        target="_blank"
+                        href="https://v1-michelbtompe.vercel.app/"
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: "15px",
+                          color: "var(--primaryColor)",
+                        }}
+                      >
+                        <OpenInNewOutlined
+                          sx={{ fill: "var(--primaryColor)" }}
+                        />{" "}
+                        V1 version
+                      </Link>
+                      <IconButton
+                        size="small"
+                        aria-label={"Toggle theme"}
+                        onClick={() => toggleTheme()}
+                        className="icon-hover"
+                      >
+                        {theme === "light" ? <DarkMode /> : <LightMode />}
+                      </IconButton>
+                    </Box>
                   </Menu>
                 </Box>
 
-                <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
+                <Box
+                  sx={{
+                    flexGrow: 0,
+                    display: { xs: "none", md: "flex" },
+                    alignItems: "center",
+                  }}
+                >
                   {pages.map((page) => (
                     <Link
                       key={page.id}
@@ -291,16 +343,35 @@ export default function Navbar() {
                     >
                       {page.name}
                     </Link>
-                    
                   ))}
                   <Tooltip title="v1 version" arrow>
-                  <Link target="_blank" href="https://v1-michelbtompe.vercel.app/" 
-                  style={{margin: "0 0.75rem",display: "flex",
-                            alignItems: "center",
-                            gap: "5px",color:'var(--primaryColor)'
-                            }}>
-                            <OpenInNewOutlined fontSize="small" sx={{fill:'var(--primaryColor)'}} /> v1
-                          </Link></Tooltip>
+                    <Link
+                      target="_blank"
+                      href="https://v1-michelbtompe.vercel.app/"
+                      style={{
+                        margin: "0 0.75rem",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: "5px",
+                        color: "var(--primaryColor)",
+                      }}
+                    >
+                      <OpenInNewOutlined
+                        fontSize="small"
+                        sx={{ fill: "var(--primaryColor)" }}
+                      />{" "}
+                      v1
+                    </Link>
+                  </Tooltip>
+
+                  <IconButton
+                    size="small"
+                    aria-label={"Toggle theme"}
+                    onClick={() => toggleTheme()}
+                    className="icon-hover"
+                  >
+                    {theme === "light" ? <DarkMode /> : <LightMode />}
+                  </IconButton>
                 </Box>
               </Box>
             </Toolbar>
