@@ -14,6 +14,7 @@ import Link from "next/link";
 import profilePic from "@/assets/images/profilePic.jpeg";
 import Image from "next/image";
 import SectionTilte from "../SectionTitle";
+import { gitlabIcon } from "@/utils/variables";
 
 const socials = [
   {
@@ -27,7 +28,7 @@ const socials = [
     id: 2,
     name: "GitLab",
     href: "https://gitlab.com/Tom-michel/",
-    icon: <AccountTree />,
+    icon: gitlabIcon,
     color: "",
   },
 ];
@@ -57,7 +58,10 @@ const recentsProjects = [
 
 const ProjectsSection = () => {
   return (
-    <Box className="projects-section" sx={{ my: 5, px: { xs: 0, sm: 2 } }}>
+    <Box
+      className="projects-section"
+      sx={{ my: 5, px: { xs: 0, sm: 2 }, pr: { md: 4 } }}
+    >
       <Grid
         container
         sx={{
@@ -68,7 +72,7 @@ const ProjectsSection = () => {
           item
           xs={12}
           md={6}
-          sx={{ pt: { xs: 5, md: 0 }, pr: { xs: 0, md: 5 } }}
+          sx={{ pt: { xs: 5, md: 0 }, pr: { xs: 0, md: 8 } }}
         >
           <div
             style={{
@@ -143,7 +147,7 @@ const ProjectsSection = () => {
             ))}
           </List>
         </Grid>
-        <Grid sx={{ position: "relative" }} item xs={12} md={6}>
+        <Grid sx={{ position: "relative", pl: { md: 4 } }} item xs={12} md={6}>
           <SectionTilte
             title="Projects"
             number="02"
