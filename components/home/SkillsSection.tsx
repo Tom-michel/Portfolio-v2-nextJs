@@ -4,6 +4,16 @@ import SectionTitle from "../SectionTitle";
 
 const SkillsSection = () => {
   // const slugs = ["javascript", "java", "dart", "typescript"];
+  /**
+   * * test
+   * ! this is a deprecated component
+   * // deleted test
+   * ? test
+   * @param test
+   * @returns test
+   * TODO: test
+   */
+
   return (
     <Box className="skills-section" sx={{ my: 5, px: { xs: 0, sm: 2 } }}>
       <Grid container>
@@ -13,7 +23,7 @@ const SkillsSection = () => {
             number="03"
             description={
               <>
-                I use many techonlogies and tools to build professionnal
+                I use many technologies and tools to build professional
                 applications and mockups.
               </>
             }
