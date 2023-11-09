@@ -6,10 +6,6 @@ import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
 
 export default function App({ Component, pageProps }: AppProps) {
-  // const primaryColor = getComputedStyle(document.documentElement)
-  //   .getPropertyValue("--primaryColor")
-  //   .trim();
-
   const [primaryColor, setPrimaryColor] = useState("#ff6600"); // vous pouvez définir une couleur par défaut ici
 
   useEffect(() => {

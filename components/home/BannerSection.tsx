@@ -1,11 +1,12 @@
-import { AccountTree, GitHub, LinkedIn, Twitter } from "@mui/icons-material";
+import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
 import { Avatar, Box, Grid, IconButton, Tooltip } from "@mui/material";
 import bgContent from "@/assets/images/bgContent.png";
-import profilePic from "@/assets/images/profilePic.jpeg";
+import profilePic from "@/assets/images/profilePic.png";
 
 import Image from "next/image";
 import Experiences from "./Experiences";
 import SectionTilte from "../SectionTitle";
+import { gitlabIcon } from "@/utils/variables";
 
 const socials = [
   {
@@ -33,7 +34,7 @@ const socials = [
     id: 2,
     name: "GitLab",
     href: "https://gitlab.com/Tom-michel/",
-    icon: <AccountTree />,
+    icon: gitlabIcon,
     color: "",
   },
 ];
@@ -130,13 +131,15 @@ const BannerSection = () => {
                     height: "150px",
                     position: "absolute",
                     top: -80,
+                    border: "0.5px solid var(--primaryColor)",
+                    // backgroundColor: "var(--cardBgColor)",
                   }}
                 >
                   <Image
                     style={{
                       width: "100%",
                       height: "100%",
-                      objectFit: "cover",
+                      objectFit: "contain",
                     }}
                     src={profilePic}
                     alt=""
