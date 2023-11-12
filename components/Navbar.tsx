@@ -120,7 +120,7 @@ export default function Navbar() {
       border: "1px solid var(--primaryColor)",
       backdropFilter: "blur(2px)",
     },
-    transform: Boolean(anchorElNav) ? "rotate(-50deg)" : "none",
+    // transform: Boolean(anchorElNav) ? "rotate(-50deg)" : "none",
     transition: "0.3s",
   };
 
@@ -192,7 +192,7 @@ export default function Navbar() {
                     aria-label={"Toggle theme"}
                     onClick={() => toggleTheme()}
                     className="icon-hover"
-                    sx={{ ml: 0.3, mr: 2 }}
+                    sx={{ ml: 0.3, mr: 2, display: { xs: "flex", md: "none" } }}
                   >
                     {theme === "light" ? <DarkMode /> : <LightMode />}
                   </IconButton>
@@ -253,7 +253,7 @@ export default function Navbar() {
                           onClick={handleCloseNavMenu}
                           sx={btnMenuStyle}
                         >
-                          <DragHandle />
+                          <Close />
                         </IconButton>
                       )}
                     </Box>
@@ -400,7 +400,11 @@ export default function Navbar() {
             zIndex: 9999,
           }}
         >
-          <DragHandle fontSize="large" />
+          {!Boolean(anchorElNav) ? (
+            <DragHandle fontSize="large" />
+          ) : (
+            <Close fontSize="large" />
+          )}
         </IconButton>
       )}
     </>

@@ -1,43 +1,44 @@
-import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
+// import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
 import { Avatar, Box, Grid, IconButton, Tooltip } from "@mui/material";
 import bgContent from "@/assets/images/bgContent.png";
-import profilePic from "@/assets/images/profilePic.png";
+// import profilePic from "@/assets/images/profilePic.png";
 
 import Image from "next/image";
 import Experiences from "./Experiences";
 import SectionTilte from "../SectionTitle";
-import { gitlabIcon } from "@/utils/variables";
+// import { gitlabIcon } from "@/utils/variables";
+import { aboutInfo } from "@/data/aboutData";
 
-const socials = [
-  {
-    id: 1,
-    name: "LinkedIn",
-    href: "https://linkedin.com/in/michel-btompe-3a0bb3234/",
-    icon: <LinkedIn />,
-    color: "",
-  },
-  {
-    id: 2,
-    name: "Twitter",
-    href: "https://twitter.com/michelbtompe",
-    icon: <Twitter />,
-    color: "",
-  },
-  {
-    id: 2,
-    name: "GitHub",
-    href: "https://github.com/Tom-michel/",
-    icon: <GitHub />,
-    color: "",
-  },
-  {
-    id: 2,
-    name: "GitLab",
-    href: "https://gitlab.com/Tom-michel/",
-    icon: gitlabIcon,
-    color: "",
-  },
-];
+// const socials = [
+//   {
+//     id: 1,
+//     name: "LinkedIn",
+//     href: "https://linkedin.com/in/michel-btompe-3a0bb3234/",
+//     icon: <LinkedIn />,
+//     color: "",
+//   },
+//   {
+//     id: 2,
+//     name: "Twitter",
+//     href: "https://twitter.com/michelbtompe",
+//     icon: <Twitter />,
+//     color: "",
+//   },
+//   {
+//     id: 2,
+//     name: "GitHub",
+//     href: "https://github.com/Tom-michel/",
+//     icon: <GitHub />,
+//     color: "",
+//   },
+//   {
+//     id: 2,
+//     name: "GitLab",
+//     href: "https://gitlab.com/Tom-michel/",
+//     icon: gitlabIcon,
+//     color: "",
+//   },
+// ];
 
 const BannerSection = () => {
   return (
@@ -63,26 +64,12 @@ const BannerSection = () => {
           md={6}
         >
           <SectionTilte
-            title="Michel Btompe"
-            number="01"
-            description={
-              <>
-                <span style={{ textTransform: "uppercase", fontWeight: 700 }}>
-                  {" "}
-                  You can call me <span className="textP">TOM</span>
-                </span>{" "}
-                <br />
-                I'am a fullstack web/mobile developer and Ui Designer. I like to
-                build or improve innovative solutions to everyday problems in
-                society. I build profeessional web and modile app. <br />
-                <span style={{ textTransform: "uppercase", fontWeight: 600 }}>
-                  Based in Yaoundé, Available for Freelance Projects.
-                </span>
-              </>
-            }
+            title={aboutInfo.name}
+            number={aboutInfo.number}
+            description={aboutInfo.description}
           />
           <div className="pt-3">
-            {socials.map((social, index) => (
+            {aboutInfo.socials.map((social, index) => (
               <Tooltip key={index} title={social.name} arrow>
                 <IconButton
                   sx={{ backgroundColor: "var(--cardBgColor)", mx: 0.5 }}
@@ -141,7 +128,7 @@ const BannerSection = () => {
                       height: "100%",
                       objectFit: "contain",
                     }}
-                    src={profilePic}
+                    src={aboutInfo.profilePic}
                     alt=""
                   />
                 </Avatar>
@@ -153,7 +140,7 @@ const BannerSection = () => {
                   pt: 3,
                 }}
               >
-                <h4 className="title">Experiences</h4>
+                <h3 className="title">Experiences</h3>
                 <Experiences />
               </Box>
             </div>

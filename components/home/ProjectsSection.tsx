@@ -15,6 +15,7 @@ import profilePic from "@/assets/images/profilePic.jpeg";
 import Image from "next/image";
 import SectionTilte from "../SectionTitle";
 import { gitlabIcon } from "@/utils/variables";
+import { projectData, projectInfo } from "@/data/projectData";
 
 const socials = [
   {
@@ -33,28 +34,7 @@ const socials = [
   },
 ];
 
-const recentsProjects = [
-  {
-    name: "TheTipTop Jeux-concours",
-    slug: "thetiptop",
-  },
-  {
-    name: "Dolphprint Chat App",
-    slug: "dolphprint-chat-app",
-  },
-  {
-    name: "Student Card UY1",
-    slug: "sc-uy1",
-  },
-  {
-    name: "Outlook Calendar clone",
-    slug: "outlook-clone",
-  },
-  {
-    name: "Flood Alert",
-    slug: "flood-alert",
-  },
-];
+const recentsProjects = projectData.slice(0, 5);
 
 const ProjectsSection = () => {
   return (
@@ -82,9 +62,9 @@ const ProjectsSection = () => {
               justifyContent: "space-between",
             }}
           >
-            <span>Recents Projects</span>
+            <h3>Recents Projects</h3>
             <Link className="textP" href={"/projects"}>
-              View all
+              View all ({projectData.length})
             </Link>
           </div>
           <List>
@@ -143,7 +123,7 @@ const ProjectsSection = () => {
                 >
                   <span>{project.name}</span>
                   <div className="imagePro">
-                    <Image src={profilePic} alt="" />
+                    <Image src={project.bannerImg} alt="" />
                   </div>
                 </ListItemButton>
               </Link>
@@ -152,35 +132,9 @@ const ProjectsSection = () => {
         </Grid>
         <Grid sx={{ position: "relative", pl: { md: 4 } }} item xs={12} md={6}>
           <SectionTilte
-            title="Projects"
-            number="02"
-            description={
-              <>
-                I have worked and participated on many projects: personal,
-                freelance, enterprise and academic. The recents projects are
-                listed below and others can be found on my{" "}
-                <Link
-                  href="https://github.com/Tom-michel/"
-                  target="_blank"
-                  className="textP"
-                >
-                  github
-                </Link>{" "}
-                and{" "}
-                <Link
-                  href="https://gitlab.com/Tom-michel/"
-                  target="_blank"
-                  className="textP"
-                >
-                  gitlab
-                </Link>{" "}
-                accounts.{" "}
-                <span style={{ fontStyle: "italic" }}>
-                  (Unfortunately, several enterprise projects are in private
-                  mode)
-                </span>
-              </>
-            }
+            title={projectInfo.title}
+            number={projectInfo.number}
+            description={projectInfo.description}
           />
           <div className="pt-3">
             {socials.map((social) => (

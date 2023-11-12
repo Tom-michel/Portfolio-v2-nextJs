@@ -19,6 +19,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      {/* DEV INDICATION */}
       <Toolbar
         sx={{
           display: "flex",
@@ -42,6 +44,8 @@ export default function Home() {
           </Button>
         </Link>
       </Toolbar>
+      {/* DEV INDICATION */}
+
       <BannerSection />
       <ProjectsSection />
       <SkillsSection />
