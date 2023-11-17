@@ -31,7 +31,7 @@ const ContactSection = () => {
     // backgroundColor: "#000",
   };
   return (
-    <Box className="contacts-section" sx={{ mt: 5, px: { xs: 0, sm: 2 } }}>
+    <Box className="contacts-section" sx={{ my: 5, px: { xs: 0, sm: 2 } }}>
       <Grid container>
         <Grid
           item
@@ -158,7 +158,7 @@ const ContactSection = () => {
               </Link>
               <Divider sx={{ height: 2 }} />
               <Link target="_blank" href={"https://wa.me/237670915614"}>
-                +237 670 915 614 (Michel BTOMPE)
+                +237 670 915 614 (M. BTOMPE)
               </Link>
             </div>
           </Box>

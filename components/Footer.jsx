@@ -8,7 +8,6 @@ const Footer = () => {
       maxWidth="xl"
       sx={{
         // backgroundColor: "var(--cardBgColor)",
-        mt: 3,
         pb: 2,
       }}
     >
