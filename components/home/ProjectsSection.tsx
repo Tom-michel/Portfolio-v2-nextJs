@@ -62,7 +62,7 @@ const ProjectsSection = () => {
               justifyContent: "space-between",
             }}
           >
-            <h3>Recents Projects</h3>
+            <h3 style={{ marginBottom: 0 }}>Recents Projects</h3>
             <Link className="textP" href={"/projects"}>
               View all ({projectData.length})
             </Link>

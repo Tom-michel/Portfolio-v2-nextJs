@@ -10,5 +10,6 @@ export const socialLinks = {
   gitlab: "https://gitlab.com/Tom-michel/",
   linkedin: "https://linkedin.com/in/michel-btompe-3a0bb3234/",
   twitter: "https://twitter.com/michelbtompe",
+  bento: "https://bento.me/tom-y",
   ubora: "http://ubora-studios.com",
 };
