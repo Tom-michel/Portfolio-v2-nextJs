@@ -8,7 +8,7 @@ import {
 } from "@mui/icons-material";
 import { gitlabIcon, socialLinks } from "../utils/variables";
 import profilePic from "@/assets/images/profilePic.png";
-import { BusinessCenterTwoTone, DataObject, Code } from "@mui/icons-material";
+import { DataObject, Code } from "@mui/icons-material";
 import Link from "next/link";
 
 export const aboutInfo = {

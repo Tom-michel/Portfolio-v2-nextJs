@@ -65,6 +65,22 @@ const slugs = [
   "adobeillustrator",
 ];
 
+/**
+ * * get the tech list from the cloud-icons
+ */
+// let tab = "";
+// slugs.forEach((tech) => {
+//   tab += `
+//     {
+//       name: "${tech}",
+//       icon:"",
+//       dot:"#fff",
+//       starred: false
+//     },
+//   `;
+// });
+// console.log(tab);
+
 const cloudProps: Omit<ICloud, "children"> = {
   id: "stable-id-for-csr-ssr",
   // containerProps: {
@@ -77,7 +93,7 @@ const cloudProps: Omit<ICloud, "children"> = {
   //   },
   // },
   // canvasProps: {
-  //   style: { maxWidth: "90%" },
+  //   style: { maxWidth: "80%" },
   // },
   options: {
     reverse: true,

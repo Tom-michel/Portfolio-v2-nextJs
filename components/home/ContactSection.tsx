@@ -32,7 +32,10 @@ const ContactSection = () => {
     // backgroundColor: "#000",
   };
   return (
-    <Box className="contacts-section" sx={{ my: 5, px: { xs: 0, sm: 2 } }}>
+    <Box
+      className="contacts-section"
+      sx={{ my: 5, pt: { md: 5 }, px: { xs: 0, sm: 2 } }}
+    >
       <Grid container>
         <Grid
           item

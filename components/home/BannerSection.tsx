@@ -6,8 +6,8 @@ import bgContent from "@/assets/images/bgContent.png";
 import Image from "next/image";
 import Experiences from "./Experiences";
 import SectionTilte from "../SectionTitle";
-// import { gitlabIcon } from "@/utils/variables";
 import { aboutInfo } from "@/data/aboutData";
+// import { gitlabIcon } from "@/utils/variables";
 
 // const socials = [
 //   {
