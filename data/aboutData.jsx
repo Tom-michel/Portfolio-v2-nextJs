@@ -94,7 +94,7 @@ export const experiences = [
         title: "Fullstack Developer",
         dec: (
           <>
-            In the{" "}
+            At{" "}
             <Link
               style={{ textDecoration: "underline" }}
               className="textPOP"
@@ -131,10 +131,10 @@ export const experiences = [
     exp: [
       {
         icon: <SchoolOutlined fontSize="small" />,
-        title: "Fullstack Developer",
+        title: "Course Lecturer",
         dec: (
           <>
-            Course Lecturer at{" "}
+            Software Engineering & Algorithms at{" "}
             <span style={{ textDecoration: "underline" }} className="textPOP">
               KELDEN University Institute
             </span>{" "}
@@ -147,7 +147,7 @@ export const experiences = [
         title: "Fullstack Developer",
         dec: (
           <>
-            In the{" "}
+            At{" "}
             <Link
               style={{ textDecoration: "underline" }}
               className="textPOP"

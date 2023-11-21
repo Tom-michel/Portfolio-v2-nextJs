@@ -27,6 +27,7 @@ const ContactSection = () => {
     display: "flex",
     alignItems: "center",
     gap: 3,
+    flexDirection: { xs: "row-reverse", sm: "row" },
     // justifyContent: "center",
     // backgroundColor: "#000",
   };

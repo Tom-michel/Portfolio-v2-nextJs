@@ -14,21 +14,21 @@ import Link from "next/link";
 import profilePic from "@/assets/images/profilePic.jpeg";
 import Image from "next/image";
 import SectionTilte from "../SectionTitle";
-import { gitlabIcon } from "@/utils/variables";
+import { gitlabIcon, socialLinks } from "@/utils/variables";
 import { projectData, projectInfo } from "@/data/projectData";
 
-const socials = [
+const socialsGit = [
   {
     id: 1,
     name: "GitHub",
-    href: "https://github.com/Tom-michel/",
+    href: socialLinks.github,
     icon: <GitHub />,
     color: "",
   },
   {
     id: 2,
     name: "GitLab",
-    href: "https://gitlab.com/Tom-michel/",
+    href: socialLinks.gitlab,
     icon: gitlabIcon,
     color: "",
   },
@@ -137,7 +137,7 @@ const ProjectsSection = () => {
             description={projectInfo.description}
           />
           <div className="pt-3">
-            {socials.map((social) => (
+            {socialsGit.map((social) => (
               <Tooltip key={social.id} title={social.name} arrow>
                 <IconButton
                   sx={{ backgroundColor: "var(--cardBgColor)", mx: 0.5 }}
