@@ -67,21 +67,25 @@ const SkillsSection = () => {
                 sx={{
                   display: "flex",
                   flexWrap: "wrap",
-                  gap: 2,
+                  gap: { xs: 1.5, sm: 2 },
+                  transition: "0.3s",
 
                   ".tech": {
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
                     justifyContent: "center",
+                    transition: "0.3s",
                     gap: 0.5,
-                    width: 90,
-                    height: 90,
+                    width: { xs: 85, sm: 90 },
+                    height: { xs: 85, sm: 90 },
                     py: 5,
                     borderRadius: 2,
                     backgroundColor: "var(--backgroundColor)",
                   },
                   ".tech:hover": {
+                    transition: "0.3s",
+                    boxShadow: "0 0 0.5rem #000",
                     cursor: "pointer",
                     border: "1px solid var(--primaryColor)",
                     backgroundColor: "transparent",
@@ -93,8 +97,8 @@ const SkillsSection = () => {
                   },
                 }}
               >
-                {stack.tech.map((tech) => (
-                  <span className="tech">
+                {stack.tech.map((tech, index) => (
+                  <span key={index} className="tech">
                     {tech.icon}
                     <span className="techName">{tech.name}</span>
                   </span>

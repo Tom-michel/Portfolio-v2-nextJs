@@ -12,6 +12,7 @@ import {
   siGithub,
   siGitlab,
   siJavascript,
+  siJenkins,
   siJira,
   siMongodb,
   siMui,
@@ -54,7 +55,7 @@ const backend = [
     starred: false,
   },
   {
-    name: "drf",
+    name: "Django rest",
     icon: getIcons([siDjango]),
     dot: "#fff",
     starred: false,
@@ -139,6 +140,12 @@ const deployment = [
   {
     name: "docker",
     icon: getIcons([siDocker]),
+    dot: "#fff",
+    starred: false,
+  },
+  {
+    name: "jenkins",
+    icon: getIcons([siJenkins]),
     dot: "#fff",
     starred: false,
   },
