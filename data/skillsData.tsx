@@ -1,27 +1,67 @@
 import { Code, Layers, Settings, Storage } from "@mui/icons-material";
+import { renderSimpleIcon } from "react-icon-cloud";
+import {
+  siAdobeillustrator,
+  siAdobephotoshop,
+  siBootstrap,
+  siCanva,
+  siDjango,
+  siDocker,
+  siFigma,
+  siFlutter,
+  siGithub,
+  siGitlab,
+  siJavascript,
+  siJira,
+  siMongodb,
+  siMui,
+  siMysql,
+  siNextdotjs,
+  siNginx,
+  siPostgresql,
+  siPython,
+  siReact,
+  siRedis,
+  siSqlite,
+  siTrello,
+  siTypescript,
+  siVercel,
+  siVisualstudiocode,
+} from "simple-icons";
+
+const getIcons = (slugs: any[]) => {
+  const icons = slugs.map((icon) => {
+    return renderSimpleIcon({
+      icon,
+      size: 42,
+      aProps: { onClick: (e: any) => e.preventDefault() },
+    });
+  });
+  return icons;
+};
 
 const backend = [
   {
     name: "python",
-    icon: "",
+    icon: getIcons([siPython]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "django",
-    icon: "",
+    icon: getIcons([siDjango]),
     dot: "#fff",
     starred: false,
   },
   {
-    name: "django restframework",
-    icon: "",
+    name: "drf",
+    icon: getIcons([siDjango]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "Redis",
-    icon: "",
+    icon: getIcons([siRedis]),
     dot: "#fff",
     starred: false,
   },
@@ -29,68 +69,68 @@ const backend = [
 const frontend = [
   {
     name: "Flutter Dart",
-    icon: "",
+    icon: getIcons([siFlutter]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "ReactJS",
-    icon: "",
+    icon: getIcons([siReact]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "NextJS",
-    icon: "",
+    icon: getIcons([siNextdotjs]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "materialui",
-    icon: "",
+    icon: getIcons([siMui]),
     dot: "#fff",
     starred: false,
   },
 
   {
     name: "bootstrap",
-    icon: "",
+    icon: getIcons([siBootstrap]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "Javascript",
-    icon: "",
+    icon: getIcons([siJavascript]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "typescript",
-    icon: "",
+    icon: getIcons([siTypescript]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "figma",
-    icon: "",
+    icon: getIcons([siFigma]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "canva",
-    icon: "",
+    icon: getIcons([siCanva]),
     dot: "#fff",
     starred: false,
   },
   {
-    name: "adobe photoshop",
-    icon: "",
+    name: "A. photoshop",
+    icon: getIcons([siAdobephotoshop]),
     dot: "#fff",
     starred: false,
   },
   {
-    name: "adobe illustrator",
-    icon: "",
+    name: "A. illustrator",
+    icon: getIcons([siAdobeillustrator]),
     dot: "#fff",
     starred: false,
   },
@@ -98,25 +138,25 @@ const frontend = [
 const deployment = [
   {
     name: "docker",
-    icon: "",
+    icon: getIcons([siDocker]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "nginx",
-    icon: "",
+    icon: getIcons([siNginx]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "vercel",
-    icon: "",
+    icon: getIcons([siVercel]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "GitLab CI-CD",
-    icon: "",
+    icon: getIcons([siGitlab]),
     dot: "#fff",
     starred: false,
   },
@@ -124,55 +164,55 @@ const deployment = [
 const other = [
   {
     name: "mysql",
-    icon: "",
+    icon: getIcons([siMysql]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "sqlite",
-    icon: "",
+    icon: getIcons([siSqlite]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "postgresql",
-    icon: "",
+    icon: getIcons([siPostgresql]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "mongodb",
-    icon: "",
+    icon: getIcons([siMongodb]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "jira",
-    icon: "",
+    icon: getIcons([siJira]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "Trello",
-    icon: "",
+    icon: getIcons([siTrello]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "github",
-    icon: "",
+    icon: getIcons([siGithub]),
     dot: "#fff",
     starred: false,
   },
   {
     name: "gitlab",
-    icon: "",
+    icon: getIcons([siGitlab]),
     dot: "#fff",
     starred: false,
   },
   {
-    name: "visualstudio code",
-    icon: "",
+    name: "vs code",
+    icon: getIcons([siVisualstudiocode]),
     dot: "#fff",
     starred: false,
   },

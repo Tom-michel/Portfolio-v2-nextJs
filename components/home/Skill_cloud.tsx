@@ -24,7 +24,7 @@ const useIcons = (slugs: string[]) => {
     );
   }
 
-  return <a>Loading</a>;
+  return <a>Loading...</a>;
 };
 
 const slugs = [

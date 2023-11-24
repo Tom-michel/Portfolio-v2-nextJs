@@ -5,7 +5,6 @@ import {
   Box,
   Grid,
   Typography,
-  iconClasses,
 } from "@mui/material";
 import SectionTitle from "../SectionTitle";
 import Skill_cloud from "./Skill_cloud";
@@ -13,8 +12,6 @@ import { skillsData } from "@/data/skillsData";
 import { ExpandMore } from "@mui/icons-material";
 
 const SkillsSection = () => {
-  // const slugs = ["javascript", "java", "dart", "typescript"];
-
   return (
     <Box
       className="skills-section"
@@ -66,10 +63,40 @@ const SkillsSection = () => {
                   {stack.name}
                 </Typography>
               </AccordionSummary>
-              <AccordionDetails>
+              <AccordionDetails
+                sx={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: 2,
+
+                  ".tech": {
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 0.5,
+                    width: 90,
+                    height: 90,
+                    py: 5,
+                    borderRadius: 2,
+                    backgroundColor: "var(--backgroundColor)",
+                  },
+                  ".tech:hover": {
+                    cursor: "pointer",
+                    border: "1px solid var(--primaryColor)",
+                    backgroundColor: "transparent",
+                  },
+                  ".techName": {
+                    textTransform: "capitalize",
+                    textAlign: "center",
+                    fontSize: 10,
+                  },
+                }}
+              >
                 {stack.tech.map((tech) => (
-                  <span style={{ textTransform: "capitalize" }}>
-                    {tech.name},{" "}
+                  <span className="tech">
+                    {tech.icon}
+                    <span className="techName">{tech.name}</span>
                   </span>
                 ))}
               </AccordionDetails>
