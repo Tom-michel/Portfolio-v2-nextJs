@@ -15,7 +15,6 @@ import {
 import {
   AppBar,
   Box,
-  Button,
   Container,
   Divider,
   IconButton,
@@ -26,6 +25,7 @@ import {
   Typography,
 } from "@mui/material";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 const pages = [
@@ -67,6 +67,8 @@ const socials = [
 ];
 
 export default function Navbar() {
+  const router = useRouter();
+
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
@@ -165,6 +167,7 @@ export default function Navbar() {
                   alignItems: "center",
                 }}
               >
+                {/* socials */}
                 <Box sx={{ display: "flex", alignItems: "center" }}>
                   {socials.map((social) => (
                     <IconButton
@@ -184,6 +187,7 @@ export default function Navbar() {
                   ))}
                 </Box>
 
+                {/* menu */}
                 <Box
                   sx={{ flexGrow: 0, display: "flex", alignItems: "center" }}
                 >
@@ -333,17 +337,45 @@ export default function Navbar() {
                     flexGrow: 0,
                     display: { xs: "none", md: "flex" },
                     alignItems: "center",
+                    ".page": {
+                      position: "relative",
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                    },
+                    ".page span": {
+                      position: "absolute",
+                      top: 28,
+                      backgroundColor: "var(--primaryColor)",
+                      height: 2,
+                      width: 10,
+                      borderRadius: 10,
+                      transition: "0.3s",
+                    },
+                    ".page:hover span": {
+                      transition: "0.3s",
+                      width: 40,
+                    },
                   }}
                 >
                   {pages.map((page) => (
-                    <Link
-                      key={page.id}
-                      href={page.href}
-                      style={{ margin: "0 0.75rem" }}
-                    >
-                      {page.name}
-                    </Link>
+                    <div className="page">
+                      <Link
+                        key={page.id}
+                        href={page.href}
+                        style={{ margin: "0 0.75rem" }}
+                      >
+                        {page.name}
+                      </Link>
+                      {/* {router.pathname === page.href && <span></span>} */}
+                      <span
+                        style={{
+                          opacity: router.pathname === page.href ? 1 : 0,
+                        }}
+                      ></span>
+                    </div>
                   ))}
+
                   <Tooltip title="v1 version" arrow>
                     <Link
                       target="_blank"
