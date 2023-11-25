@@ -10,6 +10,7 @@ import SectionTitle from "../SectionTitle";
 import Skill_cloud from "./Skill_cloud";
 import { skillsData } from "@/data/skillsData";
 import { ExpandMore } from "@mui/icons-material";
+import Image from "next/image";
 
 const SkillsSection = () => {
   return (
@@ -67,7 +68,7 @@ const SkillsSection = () => {
                 sx={{
                   display: "flex",
                   flexWrap: "wrap",
-                  gap: { xs: 1.5, sm: 2 },
+                  gap: { xs: 1.5, sm: 1.5 },
                   transition: "0.3s",
 
                   ".tech": {
@@ -77,11 +78,12 @@ const SkillsSection = () => {
                     justifyContent: "center",
                     transition: "0.3s",
                     gap: 0.5,
-                    width: { xs: 85, sm: 90 },
-                    height: { xs: 85, sm: 90 },
+                    width: { xs: 75, sm: 80 },
+                    height: { xs: 80, sm: 85 },
                     py: 5,
                     borderRadius: 2,
                     backgroundColor: "var(--backgroundColor)",
+                    border: "1px solid transparent",
                   },
                   ".tech:hover": {
                     transition: "0.3s",
@@ -99,7 +101,17 @@ const SkillsSection = () => {
               >
                 {stack.tech.map((tech, index) => (
                   <span key={index} className="tech">
-                    {tech.icon}
+                    {tech.img === "" ? (
+                      tech.icon
+                    ) : (
+                      <Image
+                        src={tech.img}
+                        alt=""
+                        priority
+                        width={70}
+                        // height={60}
+                      />
+                    )}
                     <span className="techName">{tech.name}</span>
                   </span>
                 ))}

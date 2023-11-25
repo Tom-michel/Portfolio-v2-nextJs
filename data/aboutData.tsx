@@ -135,9 +135,14 @@ export const experiences = [
         dec: (
           <>
             Software Engineering & Algorithms at{" "}
-            <span style={{ textDecoration: "underline" }} className="textPOP">
+            <Link
+              href={"https://kelden.education/"}
+              target="_blank"
+              style={{ textDecoration: "underline" }}
+              className="textPOP"
+            >
               KELDEN University Institute
-            </span>{" "}
+            </Link>{" "}
             .
           </>
         ),
