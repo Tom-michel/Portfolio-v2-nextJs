@@ -54,12 +54,22 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Michel BTOMPE is a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'"
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta property="og:url" content="https://michelbtompe.vercel.app/" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:site_name:"
+          content="Michel BTOMPE - Software Engineer"
+        />
         <meta property="og:title" content="Michel BTOMPE - Software Engineer" />
         <meta
           property="og:description"
           content="Michel BTOMPE is a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'"
         />
         <meta property="og:image" content="/banner.png" />
+        {/* <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}/banner.png`}
+        /> */}
       </Head>
       <Layout>
         <Component {...pageProps} />
