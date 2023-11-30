@@ -139,14 +139,14 @@ const frontend = [
     img: "",
   },
   {
-    name: "A. photoshop",
+    name: "photoshop",
     icon: getIcons([siAdobephotoshop]),
     dot: "#fff",
     starred: false,
     img: "",
   },
   {
-    name: "A. illustrator",
+    name: "illustrator",
     icon: getIcons([siAdobeillustrator]),
     dot: "#fff",
     starred: false,

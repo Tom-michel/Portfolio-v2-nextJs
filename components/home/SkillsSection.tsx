@@ -68,7 +68,7 @@ const SkillsSection = () => {
                 sx={{
                   display: "flex",
                   flexWrap: "wrap",
-                  gap: { xs: 1.5, sm: 1.5 },
+                  gap: { xs: 1, sm: 1.5 },
                   transition: "0.3s",
 
                   ".tech": {
@@ -77,10 +77,10 @@ const SkillsSection = () => {
                     alignItems: "center",
                     justifyContent: "center",
                     transition: "0.3s",
-                    gap: 0.5,
-                    width: { xs: 75, sm: 80 },
-                    height: { xs: 80, sm: 85 },
-                    py: 5,
+                    gap: 0.1,
+                    width: { xs: 68 },
+                    height: { xs: 70 },
+                    py: 4,
                     borderRadius: 2,
                     backgroundColor: "var(--backgroundColor)",
                     border: "1px solid transparent",
@@ -96,6 +96,12 @@ const SkillsSection = () => {
                     textTransform: "capitalize",
                     textAlign: "center",
                     fontSize: 10,
+                    // opacity: 0.8,
+                  },
+
+                  img: {
+                    width: { xs: 50 },
+                    // height={60}
                   },
                 }}
               >
@@ -108,7 +114,7 @@ const SkillsSection = () => {
                         src={tech.img}
                         alt=""
                         priority
-                        width={70}
+                        // width={70}
                         // height={60}
                       />
                     )}

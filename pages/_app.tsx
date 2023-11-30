@@ -54,6 +54,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Michel BTOMPE is a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'"
         />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="apple-touch-icon" href="/banner.png" />
         <meta property="og:url" content="https://michelbtompe.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta
