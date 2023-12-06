@@ -1,4 +1,4 @@
-import { socialLinks } from "@/utils/variables";
+import { logoContent, socialLinks } from "@/utils/variables";
 import { Box, Container, Divider, Toolbar } from "@mui/material";
 import Link from "next/link";
 
@@ -35,8 +35,7 @@ const Footer = () => {
               }}
               className="brand"
             >
-              <span style={{ fontWeight: 700 }}>TOM• </span>{" "}
-              <span className="portfolio">Portfolio</span>
+              {logoContent}
             </Link>
           </div>
           <div>

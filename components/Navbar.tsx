@@ -24,9 +24,12 @@ import {
   Tooltip,
   Typography,
 } from "@mui/material";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
+import logo from "@/assets/images/logo.png";
+import { logoContent } from "@/utils/variables";
 
 const pages = [
   {
@@ -154,11 +157,13 @@ export default function Navbar() {
                 href="/"
                 style={{
                   marginRight: 2,
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 5,
                 }}
                 className="brand"
               >
-                <span style={{ fontWeight: 700 }}>TOM• </span>{" "}
-                <span className="portfolio">Portfolio</span>
+                {logoContent}
               </Link>
 
               <Box
