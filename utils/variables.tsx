@@ -26,7 +26,9 @@ export const logoContent = (
   >
     {/* <span style={{ fontWeight: 700 }}>TOM• </span>{" "} */}
     <Image src={logo} alt="" priority width={40} />
-    <span style={{ fontWeight: 700 }}> • </span>{" "}
-    <span className="portfolio">Portfolio</span>
+
+    <span className="portfolio">
+      <span style={{ fontWeight: 700 }}> • </span> Portfolio
+    </span>
   </div>
 );
