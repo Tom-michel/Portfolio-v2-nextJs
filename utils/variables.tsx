@@ -16,16 +16,17 @@ export const socialLinks = {
 };
 
 export const logoContent = (
-  <>
+  <div
+    style={{
+      marginRight: 2,
+      display: "flex",
+      alignItems: "center",
+      gap: 5,
+    }}
+  >
     {/* <span style={{ fontWeight: 700 }}>TOM• </span>{" "} */}
-    <Image
-      src={logo}
-      alt=""
-      priority
-      width={40}
-      // height={100}
-    />
+    <Image src={logo} alt="" priority width={40} />
     <span style={{ fontWeight: 700 }}> • </span>{" "}
     <span className="portfolio">Portfolio</span>
-  </>
+  </div>
 );

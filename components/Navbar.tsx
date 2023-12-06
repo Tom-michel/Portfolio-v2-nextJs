@@ -153,16 +153,7 @@ export default function Navbar() {
                 "& a": { fontSize: "20px" },
               }}
             >
-              <Link
-                href="/"
-                style={{
-                  marginRight: 2,
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 5,
-                }}
-                className="brand"
-              >
+              <Link href="/" className="brand">
                 {logoContent}
               </Link>
 
