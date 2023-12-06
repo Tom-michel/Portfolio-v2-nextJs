@@ -343,16 +343,15 @@ export default function Navbar() {
                       flexDirection: "column",
                       alignItems: "center",
                     },
-                    ".page span": {
+                    ".page .indicator": {
                       position: "absolute",
                       top: 28,
                       backgroundColor: "var(--primaryColor)",
                       height: 2,
-                      width: 10,
                       borderRadius: 10,
                       transition: "0.3s",
                     },
-                    ".page:hover span": {
+                    ".page:hover .indicator": {
                       transition: "0.3s",
                       width: 40,
                     },
@@ -367,12 +366,12 @@ export default function Navbar() {
                       >
                         {page.name}
                       </Link>
-                      {/* {router.pathname === page.href && <span></span>} */}
-                      <span
-                        style={{
-                          opacity: router.pathname === page.href ? 1 : 0,
+                      <Box
+                        className="indicator"
+                        sx={{
+                          width: router.pathname === page.href ? 10 : 0,
                         }}
-                      ></span>
+                      ></Box>
                     </div>
                   ))}
 

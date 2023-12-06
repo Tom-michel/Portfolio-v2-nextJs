@@ -67,10 +67,6 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Michel BTOMPE is a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'"
         />
         <meta property="og:image" content="/banner.png" />
-        {/* <meta
-          property="og:image"
-          content={`${process.env.NEXT_PUBLIC_BASE_URL}/banner.png`}
-        /> */}
       </Head>
       <Layout>
         <Component {...pageProps} />
