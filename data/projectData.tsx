@@ -1,7 +1,9 @@
-import profilePic from "@/assets/images/profilePic.jpeg";
+import profilePic from "@/assets/images/profilePic.png";
 import { socialLinks } from "@/utils/variables";
 import Link from "next/link";
+// import dj from "../assets/projects"
 
+const bannerImg = "../assets/projects";
 export const projectData = [
   {
     name: "TheTipTop Jeux-concours",
@@ -24,8 +26,8 @@ export const projectData = [
     bannerImg: profilePic,
   },
   {
-    name: "Student Card UY1",
-    slug: "sc-uy1",
+    name: "DolphPretty",
+    slug: "dolphpretty",
     bannerImg: profilePic,
   },
 ];
