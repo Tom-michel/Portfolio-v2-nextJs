@@ -258,7 +258,3 @@ a:hover {
   color: var(--primaryColor);
   border-color: var(--primaryColor);
 }
-
-.MuiDivider-root.MuiDivider-fullWidth {
-  border-color: var(--cardBgColor) !important;
-}

@@ -45,6 +45,9 @@ const ContactSection = () => {
             flexWrap: "wrap",
             flexDirection: { lg: "column", md: "row" },
             justifyContent: { xs: "end", md: "start" },
+            ".MuiDivider-root.MuiDivider-fullWidth": {
+              borderColor: "var(--cardBgColor)",
+            },
           }}
         >
           <Box sx={otherContactStyle}>

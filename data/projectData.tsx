@@ -9,26 +9,31 @@ export const projectData = [
     name: "TheTipTop Jeux-concours",
     slug: "thetiptop",
     bannerImg: profilePic,
+    links: "https://thetiptop-jeux-concours.com/",
   },
   {
     name: "Dolphprint Chat App",
     slug: "dolphprint-chat-app",
     bannerImg: profilePic,
+    links: "https://commande.dolphprint.com/",
   },
   {
     name: "Outlook Calendar clone",
     slug: "outlook-clone",
     bannerImg: profilePic,
+    links: "",
   },
   {
     name: "Flood Alert",
     slug: "flood-alert",
     bannerImg: profilePic,
+    links: "",
   },
   {
     name: "DolphPretty",
     slug: "dolphpretty",
     bannerImg: profilePic,
+    links: "https://dolphpretty.com/",
   },
 ];
 

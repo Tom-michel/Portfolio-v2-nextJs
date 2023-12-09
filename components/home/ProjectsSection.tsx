@@ -63,9 +63,11 @@ const ProjectsSection = () => {
             }}
           >
             <h3 style={{ marginBottom: 0 }}>Recents Projects</h3>
-            <Link className="textP" href={"/projects"}>
-              View all ({projectData.length})
-            </Link>
+            {projectData.length > recentsProjects.length && (
+              <Link className="textP" href={"/projects"}>
+                View all ({projectData.length})
+              </Link>
+            )}
           </div>
           <List>
             <Divider
@@ -117,13 +119,19 @@ const ProjectsSection = () => {
                     ".imagePro img": {
                       width: "100%",
                       height: "100%",
-                      objectFit: "cover",
+                      objectFit: "contain",
                     },
                   }}
                 >
                   <span>{project.name}</span>
                   <div className="imagePro">
-                    <Image src={project.bannerImg} alt="" />
+                    <Image
+                      src={`/projects/${project.slug}/banner.png`}
+                      width={150}
+                      height={100}
+                      priority
+                      alt=""
+                    />
                   </div>
                 </ListItemButton>
               </Link>
