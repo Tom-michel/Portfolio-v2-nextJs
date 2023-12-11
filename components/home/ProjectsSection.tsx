@@ -20,15 +20,15 @@ import { projectData, projectInfo } from "@/data/projectData";
 const socialsGit = [
   {
     id: 1,
-    name: "GitHub",
-    href: socialLinks.github,
+    name: socialLinks.github.name,
+    href: socialLinks.github.link,
     icon: <GitHub />,
     color: "",
   },
   {
     id: 2,
-    name: "GitLab",
-    href: socialLinks.gitlab,
+    name: socialLinks.gitlab.name,
+    href: socialLinks.gitlab.link,
     icon: gitlabIcon,
     color: "",
   },

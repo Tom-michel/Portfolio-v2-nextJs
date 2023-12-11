@@ -6,7 +6,7 @@ import {
   SchoolOutlined,
   Twitter,
 } from "@mui/icons-material";
-import { gitlabIcon, socialLinks } from "../utils/variables";
+import { experienceLinks, gitlabIcon, socialLinks } from "../utils/variables";
 import profilePic from "@/assets/images/profilePic.png";
 import { DataObject, Code } from "@mui/icons-material";
 import Link from "next/link";
@@ -32,29 +32,29 @@ export const aboutInfo = {
   socials: [
     {
       id: 1,
-      name: "LinkedIn",
-      href: socialLinks.linkedin,
+      name: socialLinks.linkedin.name,
+      href: socialLinks.linkedin.name,
       icon: <LinkedIn />,
       color: "",
     },
     {
       id: 2,
-      name: "Twitter",
-      href: socialLinks.twitter,
+      name: socialLinks.twitter.name,
+      href: socialLinks.twitter.link,
       icon: <Twitter />,
       color: "",
     },
     {
-      id: 2,
-      name: "GitHub",
-      href: socialLinks.github,
+      id: 3,
+      name: socialLinks.github.name,
+      href: socialLinks.github.link,
       icon: <GitHub />,
       color: "",
     },
     {
-      id: 2,
-      name: "GitLab",
-      href: socialLinks.gitlab,
+      id: 4,
+      name: socialLinks.gitlab.name,
+      href: socialLinks.gitlab.link,
       icon: gitlabIcon,
       color: "",
     },
@@ -68,8 +68,26 @@ export const experiences = [
     year: 2021,
     exp: [
       {
+        icon: <DataObject fontSize="small" />,
+        title: "Backend Developer",
+        dec: (
+          <>
+            At{" "}
+            <Link
+              style={{ textDecoration: "underline" }}
+              className="textPOP"
+              href={experienceLinks.ubora.link}
+              target="_blank"
+            >
+              {experienceLinks.ubora.name}
+            </Link>{" "}
+            startup.
+          </>
+        ),
+      },
+      {
         icon: <Code fontSize="small" />,
-        title: "Freelance Web/Mobile Dev",
+        title: "Freelance Web & Mobile Dev",
         dec: (
           <>
             Professional Web app, Android App.{<br />}
@@ -98,10 +116,10 @@ export const experiences = [
             <Link
               style={{ textDecoration: "underline" }}
               className="textPOP"
-              href={socialLinks.ubora}
+              href={experienceLinks.ubora.link}
               target="_blank"
             >
-              Ubora Studios
+              {experienceLinks.ubora.name}
             </Link>{" "}
             startup.
           </>
@@ -136,12 +154,12 @@ export const experiences = [
           <>
             Software Engineering & Algorithms at{" "}
             <Link
-              href={"https://kelden.education/"}
+              href={experienceLinks.kelden.link}
               target="_blank"
               style={{ textDecoration: "underline" }}
               className="textPOP"
             >
-              KELDEN University Institute
+              {experienceLinks.kelden.name}
             </Link>{" "}
             .
           </>
@@ -156,10 +174,10 @@ export const experiences = [
             <Link
               style={{ textDecoration: "underline" }}
               className="textPOP"
-              href="http://ubora-studios.com"
+              href={experienceLinks.ubora.link}
               target="_blank"
             >
-              Ubora Studios
+              {experienceLinks.ubora.name}
             </Link>{" "}
             startup.
           </>

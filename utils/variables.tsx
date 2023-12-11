@@ -7,12 +7,25 @@ export const gitlabIcon = (
 );
 
 export const socialLinks = {
-  github: "https://github.com/Tom-michel/",
-  gitlab: "https://gitlab.com/Tom-michel/",
-  linkedin: "https://linkedin.com/in/michel-btompe-3a0bb3234/",
-  twitter: "https://twitter.com/michelbtompe",
-  bento: "https://bento.me/tom-y",
-  ubora: "http://ubora-studios.com",
+  github: { name: "GitHub", link: "https://github.com/Tom-michel/" },
+  gitlab: { name: "GitLab", link: "https://gitlab.com/Tom-michel/" },
+  linkedin: {
+    name: "LinkedIn",
+    link: "https://linkedin.com/in/michel-btompe-3a0bb3234/",
+  },
+  twitter: { name: "X(Twitter)", link: "https://twitter.com/michelbtompe" },
+  bento: { name: "Bento", link: "https://bento.me/tom-y" },
+};
+
+export const experienceLinks = {
+  ubora: {
+    name: "Ubora Studios (Dolph Group)",
+    link: "http://ubora-studios.com",
+  },
+  kelden: {
+    name: "KELDEN University Institute",
+    link: "https://kelden.education/",
+  },
 };
 
 export const logoContent = (

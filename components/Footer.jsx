@@ -20,6 +20,7 @@ const Footer = () => {
             display: "flex",
             flexWrap: "wrap",
             justifyContent: "space-between",
+            alignItems: "center",
             "& a": { fontSize: "17px" },
             gap: 3,
           }}
@@ -28,15 +29,25 @@ const Footer = () => {
             <h4 style={{ opacity: 0.7, fontWeight: "lighter" }}>
               Made with 🧡 2023 &copy;
             </h4>
-            <Link
-              href="/"
-              style={{
-                marginRight: 2,
+            <Box
+              sx={{
+                display: "flex",
+                flexWrap: "wrap",
+                // justifyContent: "space-between",
+                // alignItems: "center",
+                // gap: 1,
               }}
-              className="brand"
             >
-              {logoContent}
-            </Link>
+              <Link
+                href="/"
+                style={{
+                  marginRight: 2,
+                }}
+                className="brand"
+              >
+                {logoContent}
+              </Link>
+            </Box>
           </div>
           <div>
             <h4 style={{ opacity: 0.7, fontWeight: "lighter" }}>Socials</h4>
@@ -49,21 +60,11 @@ const Footer = () => {
                 gap: 1,
               }}
             >
-              <Link target="_blank" href={socialLinks.github}>
-                Github
-              </Link>
-              <Link target="_blank" href={socialLinks.gitlab}>
-                GitLab
-              </Link>
-              <Link target="_blank" href={socialLinks.linkedin}>
-                LinkedIn
-              </Link>
-              <Link target="_blank" href={socialLinks.twitter}>
-                X(Twitter)
-              </Link>
-              <Link target="_blank" href={socialLinks.bento}>
-                Bento
-              </Link>
+              {Object.entries(socialLinks).map(([index, social]) => (
+                <Link key={index} target="_blank" href={social.link}>
+                  {social.name}
+                </Link>
+              ))}
             </Box>
           </div>
         </Toolbar>

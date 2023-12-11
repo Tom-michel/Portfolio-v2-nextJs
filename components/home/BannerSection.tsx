@@ -1,44 +1,9 @@
-// import { GitHub, LinkedIn, Twitter } from "@mui/icons-material";
 import { Avatar, Box, Grid, IconButton, Tooltip } from "@mui/material";
 import bgContent from "@/assets/images/bgContent.png";
-// import profilePic from "@/assets/images/profilePic.png";
-
 import Image from "next/image";
 import Experiences from "./Experiences";
 import SectionTilte from "../SectionTitle";
 import { aboutInfo } from "@/data/aboutData";
-// import { gitlabIcon } from "@/utils/variables";
-
-// const socials = [
-//   {
-//     id: 1,
-//     name: "LinkedIn",
-//     href: "https://linkedin.com/in/michel-btompe-3a0bb3234/",
-//     icon: <LinkedIn />,
-//     color: "",
-//   },
-//   {
-//     id: 2,
-//     name: "Twitter",
-//     href: "https://twitter.com/michelbtompe",
-//     icon: <Twitter />,
-//     color: "",
-//   },
-//   {
-//     id: 2,
-//     name: "GitHub",
-//     href: "https://github.com/Tom-michel/",
-//     icon: <GitHub />,
-//     color: "",
-//   },
-//   {
-//     id: 2,
-//     name: "GitLab",
-//     href: "https://gitlab.com/Tom-michel/",
-//     icon: gitlabIcon,
-//     color: "",
-//   },
-// ];
 
 const BannerSection = () => {
   return (
