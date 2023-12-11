@@ -45,12 +45,12 @@ export const projectInfo = {
       I have worked and participated on many projects: personal, freelance,
       enterprise and academic. The recents projects are listed below and others
       can be found on my{" "}
-      <Link href={socialLinks.github} target="_blank" className="textP">
-        github
+      <Link href={socialLinks.github.link} target="_blank" className="textP">
+        {socialLinks.github.name}
       </Link>{" "}
       and{" "}
-      <Link href={socialLinks.gitlab} target="_blank" className="textP">
-        gitlab
+      <Link href={socialLinks.gitlab.link} target="_blank" className="textP">
+        {socialLinks.gitlab.name}
       </Link>{" "}
       accounts.{" "}
       <span style={{ fontStyle: "italic" }}>
