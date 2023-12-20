@@ -353,8 +353,8 @@ export default function Navbar() {
                     },
                   }}
                 >
-                  {pages.map((page) => (
-                    <div className="page">
+                  {pages.map((page, index) => (
+                    <div key={index} className="page">
                       <Link
                         key={page.id}
                         href={page.href}

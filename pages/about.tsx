@@ -6,7 +6,6 @@ export default function About() {
     <>
       <Head>
         <title>Michel BTOMPE | About Me</title>
-        {/* <meta name="description" content="About me" /> */}
       </Head>
       <Container>
         <h1>About</h1>
