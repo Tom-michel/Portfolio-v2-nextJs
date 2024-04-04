@@ -71,7 +71,6 @@ export default function About() {
                 height: "400px",
                 minHeight: "400px",
                 overflow: "hidden",
-                backgroundColor: "#000",
                 filter: "grayscale(100%)",
                 transition: "filter 0.5s ease",
                 ":hover": {
