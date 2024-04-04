@@ -22,12 +22,7 @@ const BannerSection = () => {
       />
 
       <Grid container alignItems={"center"}>
-        <Grid
-          sx={{ position: "relative", px: { xs: 0, sm: 2 } }}
-          item
-          xs={12}
-          md={6}
-        >
+        <Grid sx={{ position: "relative" }} item xs={12} md={6}>
           <SectionTilte
             title={aboutInfo.name}
             number={aboutInfo.number}

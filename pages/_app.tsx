@@ -53,9 +53,12 @@ export default function App({ Component, pageProps }: AppProps) {
           name="description"
           content="Michel BTOMPE is a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'"
         />
+        <link rel="icon" href="https://michelbtompe.vercel.app/icon.png" />
         <link rel="icon" href="/icon.png" />
+
         <link rel="apple-touch-icon" href="/banner.png" />
         <meta property="og:url" content="https://michelbtompe.vercel.app/" />
+
         <meta property="og:type" content="website" />
         <meta
           property="og:site_name:"
@@ -65,6 +68,10 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta
           property="og:description"
           content="Michel BTOMPE is a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'"
+        />
+        <meta
+          property="og:image"
+          content="https://michelbtompe.vercel.app/banner.png"
         />
         <meta property="og:image" content="/banner.png" />
       </Head>
