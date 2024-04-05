@@ -19,6 +19,7 @@ export default function About() {
           justifyContent={"space-between"}
           sx={{
             justifyContent: { md: "space-between" },
+            mb: 4,
           }}
         >
           <Grid item xs={12} md={6} sx={{ position: "relative" }}>
@@ -29,15 +30,16 @@ export default function About() {
                 MICHEL BTOMPE TCHEUFFA
               </span>
               , but you can call me <span className="textP">TOM</span>
-              <span className="textP">{" • "}</span> I'm a research student at
-              the University of Yaounde 1<span className="textP">{" • "}</span>{" "}
-              I teach at the KELDEN University Institute in Yaounde
+              <span className="textP">{" • "}</span> I'm a research student in
+              Computer Science at the University of Yaounde 1
+              <span className="textP">{" • "}</span> I teach Algorithms and Data
+              Bases at the KELDEN University Institute in Yaounde
               <span className="textP">{" • "}</span> I'm a software engineer,
               fullstack developer and UI designer
               <span className="textP">{" • "}</span> I love playing video games
               #CODM and watching the amines #JJK
               <span className="textP">{" • "}</span> I speak French and German
-              very well and have an medium level of English.
+              very well and have an medium level in English.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}></Grid>
@@ -61,7 +63,10 @@ export default function About() {
             item
             xs={12}
             sm={6}
-            sx={{ display: "flex", justifyContent: { sm: "end", xs: "start" } }}
+            sx={{
+              display: "flex",
+              justifyContent: { sm: "end", xs: "start" },
+            }}
           >
             <Box
               sx={{

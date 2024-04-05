@@ -289,6 +289,9 @@ export default function Navbar() {
                           href={page.href}
                         >
                           {page.icon} {page.name}
+                          {router.pathname == page.href && (
+                            <span className="textP">•</span>
+                          )}
                         </Link>
                       </MenuItem>
                     ))}
