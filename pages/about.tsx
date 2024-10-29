@@ -101,7 +101,7 @@ export default function About() {
 
         <Box sx={{ textAlign: "center", pt: 5, mt: 5 }}>
           <Button
-            href="https://drive.google.com/file/d/1w7tVgSX_LTq7kQkcg5tNZTNfkxkaqLQe/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1W1H5qURTaQV2aZsnZk8Vp-eqopPLgPvg/view?usp=drive_link"
             target="_blank"
             variant="outlined"
             color="primary"
