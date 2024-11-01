@@ -156,18 +156,18 @@ const ProjectsSection = () => {
                 </IconButton>
               </Tooltip>
             ))}
-            <Link href="/about#cv">
-              <Button
-                sx={{
-                  backgroundColor: "var(--cardBgColor)",
-                  mx: 0.5,
-                  color: "var(--foregroundColor)",
-                }}
-                startIcon={<ArticleOutlined />}
-              >
-                View the CV
-              </Button>
-            </Link>
+            <Button
+              href="https://drive.google.com/file/d/1W1H5qURTaQV2aZsnZk8Vp-eqopPLgPvg/view?usp=drive_link"
+              target="_blank"
+              sx={{
+                backgroundColor: "var(--cardBgColor)",
+                mx: 0.5,
+                color: "var(--foregroundColor)",
+              }}
+              startIcon={<ArticleOutlined />}
+            >
+              View the CV
+            </Button>
           </div>
         </Grid>
       </Grid>
