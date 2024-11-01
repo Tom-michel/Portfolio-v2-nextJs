@@ -4,6 +4,8 @@ import "@/styles/navbar.css";
 import { ThemeProvider } from "next-themes";
 import type { AppProps } from "next/app";
 import Head from "next/head";
+// import { GeistSans } from "geist/font/sans";
+// import { GeistMono } from "geist/font/mono";
 
 // export const metadata: Metadata = {
 //   title: {
@@ -75,9 +77,11 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <meta property="og:image" content="/banner.png" />
       </Head>
+      {/* <main className={GeistMono.className}> */}
       <Layout>
         <Component {...pageProps} />
       </Layout>
+      {/* </main> */}
     </ThemeProvider>
   );
 }
