@@ -59,7 +59,7 @@ const BannerSection = () => {
               borderRadius: 2,
               mt: 13,
               textAlign: "center",
-              maxWidth: { md: "90%", lg: "70%" },
+              maxWidth: { md: "93%", lg: "80%" },
             }}
           >
             <div>

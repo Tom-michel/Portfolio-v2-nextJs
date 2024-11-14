@@ -201,4 +201,47 @@ export const experiences = [
       },
     ],
   },
+  {
+    id: "4",
+    year: 2024,
+    exp: [
+      {
+        icon: <SchoolOutlined fontSize="small" />,
+        title: "Course Lecturer",
+        dec: (
+          <>
+            - Software Engineering & Algorithms & MOO at{" "}
+            <Link
+              href={experienceLinks.kelden.link}
+              target="_blank"
+              style={{ textDecoration: "underline" }}
+              className="textPOP"
+            >
+              {experienceLinks.kelden.name}
+            </Link>{" "}
+            <br />- German Courses at{" "}
+            <span className="textPOP">VTC Smile Academy</span>
+          </>
+        ),
+      },
+      {
+        icon: <Phonelink fontSize="small" />,
+        title: "Fullstack Developer",
+        dec: (
+          <ul>
+            - Freelancer <br />- Consultant at{" "}
+            <Link
+              style={{ textDecoration: "underline" }}
+              className="textPOP"
+              href={experienceLinks.ubora.link}
+              target="_blank"
+            >
+              {experienceLinks.ubora.name}
+            </Link>{" "}
+            startup.
+          </ul>
+        ),
+      },
+    ],
+  },
 ];
