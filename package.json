@@ -19,7 +19,7 @@
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18",
-    "react-icon-cloud": "^4.1.4",
+    "react-icon-cloud": "^4.1.7",
     "simple-icons": "^9.19.0"
   },
   "devDependencies": {

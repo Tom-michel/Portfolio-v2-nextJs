@@ -16,6 +16,8 @@ const useIcons = (slugs: string[]) => {
     return Object.values(icons.simpleIcons).map((icon) =>
       renderSimpleIcon({
         icon,
+        bgHex: "#fff",
+        fallbackHex: "#fff",
         size: 42,
         aProps: {
           onClick: (e: any) => e.preventDefault(),
