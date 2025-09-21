@@ -7,7 +7,7 @@ import {
   Twitter,
 } from "@mui/icons-material";
 import { experienceLinks, gitlabIcon, socialLinks } from "../utils/variables";
-import profilePic from "@/assets/images/profilePic.png";
+import profilePic from "@/assets/images/profilePic.jpg";
 import { DataObject, Code } from "@mui/icons-material";
 import Link from "next/link";
 
