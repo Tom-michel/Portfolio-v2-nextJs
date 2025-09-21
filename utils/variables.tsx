@@ -3,7 +3,7 @@ import Image from "next/image";
 import logo from "@/assets/images/logo.png";
 
 export const resumeLink =
-  "https://drive.google.com/file/d/18SQe-wRB2jVTlP5woLgU_CpJwlZx2Tdo/view?usp=drive_link";
+  "https://drive.google.com/file/d/1cCpgqPkEW5wBdA-zv5Px7LEm4JzUmnO3/view?usp=drive_link";
 
 export const gitlabIcon = (
   <Image priority width={24} height={24} src={gitlabIconSvg} alt="" />
