@@ -79,7 +79,7 @@ const BannerSection = () => {
                     position: "absolute",
                     top: -80,
                     border: "0.5px solid var(--primaryColor)",
-                    // backgroundColor: "var(--cardBgColor)",
+                    backgroundColor: "#fff",
                   }}
                 >
                   <Image
