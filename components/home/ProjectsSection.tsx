@@ -14,7 +14,7 @@ import Link from "next/link";
 import profilePic from "@/assets/images/profilePic.jpeg";
 import Image from "next/image";
 import SectionTilte from "../SectionTitle";
-import { gitlabIcon, socialLinks } from "@/utils/variables";
+import { gitlabIcon, resumeLink, socialLinks } from "@/utils/variables";
 import { projectData, projectInfo } from "@/data/projectData";
 
 const socialsGit = [
@@ -157,7 +157,7 @@ const ProjectsSection = () => {
               </Tooltip>
             ))}
             <Button
-              href="https://drive.google.com/file/d/1W1H5qURTaQV2aZsnZk8Vp-eqopPLgPvg/view?usp=drive_link"
+              href={resumeLink}
               target="_blank"
               sx={{
                 backgroundColor: "var(--cardBgColor)",

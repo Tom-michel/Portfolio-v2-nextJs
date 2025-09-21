@@ -9,22 +9,22 @@ import Head from "next/head";
 
 // export const metadata: Metadata = {
 //   title: {
-//     template: "%s | Michel BTOMPE",
-//     default: "Michel BTOMPE - Software Engineer",
+//     template: "%s | Michel Btompe",
+//     default: "Michel Btompe - Software Engineer",
 //   },
 //   description:
-//     "Michel BTOMPE ist a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'",
+//     "Michel Btompe ist a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'",
 //   openGraph: {
 //     type: "website",
 //     locale: "en_US",
 //     url: "https://michelbtompe.vercel.app",
-//     siteName: "Michel BTOMPE - Software Engineer",
+//     siteName: "Michel Btompe - Software Engineer",
 //     images: [
 //       {
 //         url: `${banner}`,
 //         width: 1350,
 //         height: 744,
-//         alt: "Michel BTOMPE",
+//         alt: "Michel Btompe",
 //       },
 //     ],
 //   },
@@ -37,11 +37,11 @@ import Head from "next/head";
 //         url: `${banner}`,
 //         width: 1350,
 //         height: 744,
-//         alt: "Michel BTOMPE",
+//         alt: "Michel Btompe",
 //       },
 //     ],
 //   },
-//   authors: [{ name: "Michel BTOMPE", url: "https://michelbtompe.vercel.app" }],
+//   authors: [{ name: "Michel Btompe", url: "https://michelbtompe.vercel.app" }],
 //   keywords: "portfolio, profile, software, dev",
 // };
 
@@ -49,11 +49,11 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider>
       <Head>
-        <title>Michel BTOMPE - Software Engineer</title>
+        <title>Michel Btompe - Software Engineer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Michel BTOMPE is a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'"
+          content="Michel Btompe is a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'"
         />
         <link rel="icon" href="https://michelbtompe.vercel.app/icon.png" />
         <link rel="icon" href="/icon.png" />
@@ -64,12 +64,12 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta
           property="og:site_name:"
-          content="Michel BTOMPE - Software Engineer"
+          content="Michel Btompe - Software Engineer"
         />
-        <meta property="og:title" content="Michel BTOMPE - Software Engineer" />
+        <meta property="og:title" content="Michel Btompe - Software Engineer" />
         <meta
           property="og:description"
-          content="Michel BTOMPE is a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'"
+          content="Michel Btompe is a Cameroonian Software Engineer with a passion for Code: 'I like to build or improve innovative solutions to everyday problems in society'"
         />
         <meta
           property="og:image"

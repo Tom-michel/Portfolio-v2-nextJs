@@ -25,7 +25,7 @@ export const aboutInfo = {
       improve innovative solutions to everyday problems in society. I build
       profeessional web and modile app. <br />
       <span style={{ textTransform: "uppercase", fontWeight: 600 }}>
-        Based in Yaoundé, Available for Freelance Projects.
+        Based in Essen, Germany and available for Freelance Projects.
       </span>
     </>
   ),

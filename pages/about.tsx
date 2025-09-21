@@ -5,12 +5,13 @@ import Image from "next/image";
 
 import myPhoto from "@/assets/images/michel.jpg";
 import { ArrowRightAlt } from "@mui/icons-material";
+import { resumeLink } from "@/utils/variables";
 
 export default function About() {
   return (
     <>
       <Head>
-        <title>Michel BTOMPE | About Me</title>
+        <title>Michel Btompe | About Me</title>
       </Head>
       <Container sx={{ pb: 5 }}>
         <Grid
@@ -26,9 +27,7 @@ export default function About() {
             <SectionTitle title="Who am i ?" number="W" description={<></>} />
             <Typography>
               I am{" "}
-              <span style={{ textDecoration: "underline" }}>
-                MICHEL BTOMPE TCHEUFFA
-              </span>
+              <span style={{ textDecoration: "underline" }}>Michel Btompe</span>
               , but you can call me <span className="textP">TOM</span>
               <span className="textP">{" • "}</span> I'm a research student in
               Computer Science at the University of Yaounde 1
@@ -101,7 +100,7 @@ export default function About() {
 
         <Box sx={{ textAlign: "center", pt: 5, mt: 5 }}>
           <Button
-            href="https://drive.google.com/file/d/1W1H5qURTaQV2aZsnZk8Vp-eqopPLgPvg/view?usp=drive_link"
+            href={resumeLink}
             target="_blank"
             variant="outlined"
             color="primary"

@@ -74,7 +74,7 @@ const ContactSection = () => {
               </Link>
               <Divider sx={{ height: 2 }} />
               <Link target="_blank" href={"https://wa.me/237670915614"}>
-                +237 670 915 614 (M. BTOMPE)
+                +237 670 915 614 (M. Btompe)
               </Link>
             </div>
           </Box>
